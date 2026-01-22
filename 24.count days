@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int totalDays, absentDays;
+    printf("Enter total days and absent days: ");
+    scanf("%d%d", &totalDays, &absentDays);
+
+    printf("Days Worked = %d", totalDays - absentDays);
+    return 0;
+}
