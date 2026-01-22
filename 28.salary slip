@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    float basic, hra, da;
+    scanf("%f", &basic);
+    hra = basic * 0.2;
+    da = basic * 0.1;
+    printf("Total Salary = %.2f", basic + hra + da);
+    return 0;
+}
