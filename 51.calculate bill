@@ -1,0 +1,10 @@
+#include <stdio.h>
+float bill(int q, float p) {
+    return q * p;
+}
+int main() {
+    int q; float p;
+    scanf("%d%f", &q, &p);
+    printf("Bill = %.2f", bill(q, p));
+    return 0;
+}
