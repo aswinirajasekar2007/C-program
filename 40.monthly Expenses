@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    float rent, food, travel;
+    scanf("%f%f%f", &rent, &food, &travel);
+    printf("Total Expense = %.2f", rent + food + travel);
+    return 0;
+}
