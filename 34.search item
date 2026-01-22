@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int i, found = 0;
+    int a[5] = {50, 100, 150, 200, 250}, key;
+    scanf("%d", &key);
+    for (i = 0; i < 5; i++)
+        if (a[i] == key) found = 1;
+    if (found)
+        printf("Item Found");
+    else
+        printf("Not Found");
+    return 0;
+}
