@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    float price, discount;
+    printf("Enter price and discount: ");
+    scanf("%f%f", &price, &discount);
+    price -= price * discount / 100;
+    printf("Final Price = %.2f", price);
+    return 0;
+}
