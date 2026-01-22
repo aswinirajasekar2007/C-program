@@ -7,3 +7,8 @@ int main() {
     printf("Fahrenheit = %.2f", f);
     return 0;
 }
+
+
+output:
+Enter Celsius: 25
+Fahrenheit = 77.00
