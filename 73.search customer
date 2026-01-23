@@ -1,0 +1,23 @@
+#include <stdio.h>
+struct customer {
+    int id;
+    char name[20];
+    long mobile;
+};
+
+int main() {
+    struct customer c[3];
+    int i, sid;
+
+    for(i=0;i<3;i++)
+        scanf("%d %s %ld",&c[i].id,c[i].name,&c[i].mobile);
+
+    printf("Enter ID to search: ");
+    scanf("%d",&sid);
+
+    for(i=0;i<3;i++) {
+        if(c[i].id == sid)
+            printf("Name: %s Mobile: %ld",c[i].name,c[i].mobile);
+    }
+    return 0;
+}
