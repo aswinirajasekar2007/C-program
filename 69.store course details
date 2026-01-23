@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+struct Course {
+    char name[20];
+    int duration;
+    float fees;
+};
+
+int main() {
+    struct Course c;
+
+    printf("Enter Course Name: ");
+    scanf("%s", c.name);
+    printf("Enter Duration (months): ");
+    scanf("%d", &c.duration);
+    printf("Enter Fees: ");
+    scanf("%f", &c.fees);
+
+    printf("\nCourse Details:\n");
+    printf("Name: %s\nDuration: %d months\nFees: %.2f\n",
+           c.name, c.duration, c.fees);
+
+    return 0;
+}
