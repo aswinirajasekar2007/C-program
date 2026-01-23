@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int i;
+    float sales[5], total=0;
+
+    for(i=0;i<5;i++) {
+        scanf("%f",&sales[i]);
+        total += sales[i];
+    }
+
+    printf("Total Sales = %.2f", total);
+    return 0;
+}
